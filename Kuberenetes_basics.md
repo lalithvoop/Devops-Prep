@@ -39,3 +39,19 @@ Kubernetes DNS is present in every cluster which holds a static IP address. Each
 Helps in telling other nodes/pods about IP address and associate name.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Pods:**
+
+![image](https://user-images.githubusercontent.com/16974457/203921780-722ebf63-f8d4-4c1f-a40b-dc5d52adf645.png)
+
+Pods is the smallest unit in kubernetes and is the running instance of an application. A container does not run directly in a host system, it runs only inside a pod when kubernetes is orchestrating. 
+
+Usually a single pod contains of a single container, but at times, a pod run two containers if the containers are tightly coupled. For instance, the application container might need the helper container to perform actions like data validation. Both containers talk to each other as localhost ports as both share the networking namespace of the pod. Both containers are created and destroyed at the same time.
+
+![image](https://user-images.githubusercontent.com/16974457/203922500-a499286f-324b-40e8-83a0-ccd04b7aad68.png)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## commands:
+
+1. kubectl run nginx --image=nginx : create a pod with nginx image
+2. kubectl describe nginx : shows the details regarding the pod
+3. 
