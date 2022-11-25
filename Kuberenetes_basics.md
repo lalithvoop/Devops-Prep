@@ -50,8 +50,21 @@ Usually a single pod contains of a single container, but at times, a pod run two
 ![image](https://user-images.githubusercontent.com/16974457/203922500-a499286f-324b-40e8-83a0-ccd04b7aad68.png)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+### A simple YAML File: to create a pod
+
+![image](https://user-images.githubusercontent.com/16974457/203934835-ce4c6bf4-a609-40fe-8ce3-8c64a50ae631.png)
+
+[simple_redis_pod.txt](https://github.com/lalithvoop/Devops-Prep/files/10089870/simple_redis_pod.txt)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## commands:
 
-1. kubectl run nginx --image=nginx : create a pod with nginx image
+1. kubectl **run** nginx --image=nginx : create a pod with nginx image
 2. kubectl describe nginx : shows the details regarding the pod
-3. 
+3. kubectl get nodes
+4. kubectl get pods
+5. kubectl describe pod <podname>
+6. kubectl delete pod <podname>
+7. kubectl **create** --filename=file.yaml : to create the pod using the YAML file
+8. kubectl edit pod <podname> : to edit characterisitics of a pod
+9. kubectl apply -f filename.yaml : to apply the changes made
